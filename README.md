@@ -18,3 +18,9 @@
  ├─Server	        # 后端源码
  └─Web   		# 前端源码
  ```
+
+### 3. 使用
+
+```
+git lfs clone https://github.com/NEXMEX/PaddleEarth.git
+```
