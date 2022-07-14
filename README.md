@@ -15,6 +15,6 @@
  ```
  ├─Introuduction		# 文档、演示视频及PPT
  ├─ModelTraining		# 模型训练源码
- ├─Server			# 后端源码
- └─Website			# 前端源码
+ ├─Server	        # 后端源码
+ └─Web   		# 前端源码
  ```
