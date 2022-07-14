@@ -1,3 +1,4 @@
 Server/models/target_detection/model.pdiparams filter=lfs diff=lfs merge=lfs -text
 Server/models/target_extraction/model.pdiparams filter=lfs diff=lfs merge=lfs -text
 Server/models/terrain_classification/model.pdiparams filter=lfs diff=lfs merge=lfs -text
+Introduction/DemoVideo.mp4 filter=lfs diff=lfs merge=lfs -text
