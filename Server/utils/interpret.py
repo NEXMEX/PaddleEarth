@@ -2,11 +2,8 @@ import os
 import hashlib
 import numpy as np
 import os.path as osp
-
 from utils import analyse
 from utils.predictor import Predictor
-# import analyse
-# from predictor import Predictor
 from datetime import datetime
 from PIL import Image, ImageDraw
 
@@ -173,7 +170,6 @@ def target_detect(image_url, coordinates):
                     if black_image_array[y][x] == 1:
                         count += 1
             cover_rate.append(count / box_pixel)
-    # print(cover_rate)
     amount_score, scope_score, density_score, rationality = analyse.objectDectionAnalyse(cover_rate)
     result = {
         'image_path': result_path,
@@ -325,7 +321,6 @@ def terrian_classify(image_url, coordinates):
                 original_image_array[x][y][1] = 110 # G
                 original_image_array[x][y][2] = 118 # B
                 count[3] += 1
-    # coverage = result_count / mask_count
     coverage = [c / mask_count for c in count];
     result_image = Image.fromarray(original_image_array)
     result_image_path = filepath_encryption(
@@ -360,7 +355,6 @@ def terrian_classify(image_url, coordinates):
         cover_rate[1],
         cover_rate[2]
     )
-    # rationality, availabity = 'A', 'A'
     result = {
         'image_path': result_image_path,
         'building_coverage': coverage[0],
@@ -413,48 +407,3 @@ def clear_cache():
             os.remove(asb_path)
         else:
             os.rmdir(asb_path)
-
-
-# print(change_detect(
-#     image1_url='http://127.0.0.1:80/static/images/CD_A.png',
-#     image2_url='http://127.0.0.1:80/static/images/CD_B.png',
-#     coordinates=[
-#         # [50.12900000000002, -180.173],
-#         # [325.82899999999995, 194.841],
-#         # [470.8710000000001, -185.8707],
-#         # [50.12900000000002, -180.173]
-#     ]
-# ))
-
-
-# print(target_detect(
-#     image_url='http://127.0.0.1:80/static/images/TD.jpg',
-#     coordinates=[
-#         # [-237.5, -261.5],
-#         # [-237.5, 213.5],
-#         # [262.5, 213.5],
-#         # [262.5, -261.5],
-#         # [-237.5, -261.5]
-#     ]
-# ))
-
-# print(target_extract(
-#     image_url='/home/ubuntu/PaddleEarth/static/images/TE.jpg',
-#     coordinates=[
-#         # [50.12900000000002, -180.173],
-#         # [325.82899999999995, 194.841],
-#         # [470.8710000000001, -185.8707],
-#         # [50.12900000000002, -180.173]
-#     ]
-# ))
-
-
-# print(terrian_classify(
-#     image_url='http://127.0.0.1:80/static/images/5288.jpg',
-#     coordinates=[
-#         [-37.8, -82.877],
-#         [-78, 13],
-#         [91.9234, -106.77],
-#         [-37.8, -82.877]
-#     ]
-# ))

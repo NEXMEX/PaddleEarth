@@ -303,10 +303,3 @@ predictor = Predictor(
     tc_model_path=TC_MODEL_PATH,
     patches_path=CACHE_PATH
 )
-
-
-# predictor.predict(
-#     images_path='/home/ubuntu/PaddleEarth/static/images/tc_9780.jpg',
-#     output_path='/home/ubuntu/PaddleEarth/static/images/result_tc_9780.jpg',
-#     mode='terrian_classification'
-# )
