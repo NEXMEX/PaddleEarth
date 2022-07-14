@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
+  <component name="PyCharmProfessionalAdvertiser">
+    <option name="shown" value="true" />
+  </component>
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="305" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config.py" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="fileUrl" value="das://356dee5c-8f1d-4d1c-973c-807a3c494410/schema/PaddleEarth/table/users" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="305" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/main.py" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>
